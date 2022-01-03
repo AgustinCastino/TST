@@ -1,0 +1,58 @@
+/*Servicios.HTML*/
+.serviciosContainer{
+    margin-top: 20px;
+    display: grid;
+    padding: 10px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2,1fr);
+
+    .item{
+        text-align: center;
+        margin: 30px;
+        
+        img{
+            width: 400px;
+            height: auto;
+            border-radius: 10px;
+
+            @media only screen and (max-width: 968px) {
+                width: 100%;
+                  
+            }
+        }
+
+        &:hover{
+            transform: scale(1.1);
+            transition: all 1s;
+        }
+
+        
+    }
+    .informacionFlota, .informacionAlmacenamiento, .informacionSeguimiento{
+        padding: 10px;
+    }
+
+    .fotoAlmacenamientoOculto{
+        display: none;
+
+    }
+
+    @media only screen and (max-width: 968px) {
+    
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .fotoAlmacenamiento{
+            display: none;
+        }
+
+        .fotoAlmacenamientoOculto{
+            display: block;
+        }
+                   
+    }
+
+}
+

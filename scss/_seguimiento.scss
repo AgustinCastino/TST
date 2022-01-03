@@ -1,0 +1,55 @@
+.buscarEnvio{
+    margin: auto;
+    padding: 100px;
+    text-align: center;
+
+   div{
+       padding: 25px;
+       margin: auto;
+
+        .barrabuscarEnvio{
+            width: 250px;
+            height: 30px;
+            border-radius: 5px;
+            
+            @media only screen and (max-width: 968px) {
+                width: 150px;
+            }
+           
+        }
+    
+        .btnBuscar{
+            width: 100px;
+            height: 30px;
+            border-radius: 5px;
+        }
+
+    }
+
+}
+
+.sucursales{
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    div{
+        text-align: center;
+        padding: 5px;
+        img{
+            width: 100px;
+        }
+        
+        h2{
+            font-size: 20px;
+        
+        }
+    }
+
+    &:hover{
+        background-color: rgb(222, 222, 222);
+        transform: scale(1.1);
+        transition: all 1s;
+    }
+}

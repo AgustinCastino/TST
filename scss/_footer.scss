@@ -1,0 +1,36 @@
+/* Footer */
+#footer{
+    border-top: 2px solid rgb(208, 208, 208); 
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+    nav{
+        display: flex;
+        flex-flow: row wrap;
+	    justify-content: space-around;
+        align-content: center;
+        margin-top: 30px;
+
+        @media only screen and (max-width: 576px) {
+            
+            flex-flow: column wrap;
+            align-content: center;
+            margin-top: 30px;    
+        }
+        
+        div{
+            ul{
+                text-align:start;
+	            padding: 0;
+                li{
+                    color: rgb(119, 119, 119);
+                    a{
+                        color: rgb(119, 119, 119);
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    
+}

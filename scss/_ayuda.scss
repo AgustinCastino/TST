@@ -1,0 +1,48 @@
+/*Ayuda.HTML*/
+
+.ayudaContainer{
+
+    h2{
+        display: block;
+        width: 200px;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .buscador{
+        display: block;
+        width: 500px;
+        height: 30px;
+        margin: 20px auto;
+        @media only screen and (max-width: 968px) {
+            width: auto;
+        }
+    }
+
+} 
+
+.consultasFrecuentes{
+    margin-top: 50pxpx;
+
+    nav{
+        display: flex;
+        justify-content: space-around;
+        @media only screen and (max-width: 968px) {
+            flex-direction: column;  
+            text-align: center;
+            
+        }
+        div{
+            ul{
+                li{
+                    a{
+                        color: rgb(119, 119, 119);
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    
+
+}
